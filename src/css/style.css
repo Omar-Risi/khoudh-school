@@ -1,0 +1,14 @@
+* { 
+
+    padding:0;
+    margin:0;
+    font-family: 'Cairo';
+}
+
+:root { 
+
+    --acc-blue: #4682B4;
+    --acc-grey:#585858;
+    --acc-black:#212529;
+    --acc-white: #fcfcfc;
+}
