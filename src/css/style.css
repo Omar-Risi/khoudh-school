@@ -12,12 +12,21 @@
     --acc-grey:#585858;
     --acc-black:#212529;
     --acc-white: #fcfcfc;
+    
+    --nav-height:6rem;
+}
+
+body {
+    background-color: var(--acc-white);
 }
 
 nav {
     width: 100%;
-    height: 6rem;
+    height: var(--nav-height);
     display: flex;
+
+    position: sticky;
+    top: 0;
 }
 
 /* 2 main containers inside nav */
