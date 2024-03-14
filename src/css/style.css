@@ -82,6 +82,8 @@ nav ul a[current] {color: var(--acc-blue);}
     background-color: var(--acc-blue);
 }
 
+.socials[fixed] {position: fixed;}
+
 .socials ul {
     
     list-style:none;
@@ -97,6 +99,9 @@ nav ul a[current] {color: var(--acc-blue);}
 
 footer { 
 
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
     background-color: var(--acc-blue);
     color: white;
     display: flex;
