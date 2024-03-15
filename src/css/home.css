@@ -115,3 +115,9 @@ section .achievements ul li img.upsize-img {
 }
 
 section .achievements ul li p {width: 20vw;}
+
+/* media query */
+@media only screen and (orientation: portrait) {
+    section {display: none;}
+
+}

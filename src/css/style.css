@@ -59,6 +59,8 @@ nav ul {
 }
 
 nav ul a {
+    
+    flex:1;
     text-decoration: none;
     color: var(--acc-grey);
     transition: 150ms ease-in-out;
@@ -113,3 +115,24 @@ footer {
 
 footer > * {flex:1;}
 footer span {display: flex; justify-content: flex-end; align-items: center;}
+
+/* media query */
+@media only screen and (orientation: portrait) {
+    nav {display: none;}
+    .socials {display: none;}
+    footer {display: none;}
+    section {display: none;}
+
+    body { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    body::after {
+        content: 'الموقع لايزال قيد التصميم على الهاتف';
+    }
+}
+
+
