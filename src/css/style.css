@@ -116,23 +116,32 @@ footer {
 footer > * {flex:1;}
 footer span {display: flex; justify-content: flex-end; align-items: center;}
 
-/* media query */
 @media only screen and (orientation: portrait) {
-    nav {display: none;}
-    .socials {display: none;}
-    footer {display: none;}
-    section {display: none;}
-
-    body { 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    body {
+        overflow-x:hidden;
     }
 
-    body::after {
-        content: 'الموقع لايزال قيد التصميم على الهاتف';
+    nav div a{display: none}
+
+    nav > ul {flex:2;}
+
+    footer {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        left: 0;
+    }
+
+    nav {
+        background-color: white;
+        box-shadow: 0 2px 5px #0005;
+    }
+
+    nav ul li a {
+        font-size: 5vw;
+    }
+
+    .socials {
+        display: none;
     }
 }
-
-

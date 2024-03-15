@@ -10,9 +10,8 @@ section {
 }
 
 section .card {
-    
-    height: 50vh;
-    width: 20vw;
+    flex:1; 
+    max-height: 50vh;
     background-color: white;
     box-shadow: 2px 2px 10px #000a;
     border-radius: 20px;
@@ -42,4 +41,21 @@ section .card  a button {
 .card a button:hover {
     scale: 1.15;
     border-radius: 0px;
+}
+
+@media only screen and (orientation: portrait) {
+
+    section {
+
+        display: grid;
+        place-items:center;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        aspect-ratio: 1/1;
+        width: 60vw;
+    }
+
 }
