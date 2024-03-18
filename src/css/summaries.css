@@ -24,7 +24,7 @@ section .card {
     gap: 1rem;
 }
 
-section .card  a button {
+section .card  button {
     padding: 1rem 1.75rem;
 
     font-size: 1rem;
@@ -39,9 +39,24 @@ section .card  a button {
     transition: 150ms ease-in-out;
 }
 
-.card a button:hover {
+.card button:hover {
     scale: 1.15;
     border-radius: 0px;
+}
+
+.card button a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+.card button[disabled] {
+   cursor: not-allowed; 
+   opacity: 0.65;
+}
+
+.card button[disabled]:hover {
+    scale: 1;
+
 }
 
 @media only screen and (orientation: portrait) {
@@ -56,7 +71,10 @@ section .card  a button {
 
     .card {
         aspect-ratio: 1/1;
-        width: 60vw;
+        width: 80vw;
     }
 
+    .card > * {
+        scale: 1.2;
+    }
 }
