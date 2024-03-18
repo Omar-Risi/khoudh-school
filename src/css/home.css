@@ -127,6 +127,9 @@ section .achievements ul li img.upsize-img {
         display: grid;
         place-items: center;
     }
+    section:first-of-type {
+        height: 50vh;
+    }
     section .container {
         width: 80vw;
     }
@@ -161,6 +164,7 @@ section .achievements ul li img.upsize-img {
     .achievements ul li p {
 
         width: 80vw;
+        font-size: 5vw;
     }
 
    
